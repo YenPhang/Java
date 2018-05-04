@@ -23,7 +23,8 @@ public class Main {
     public static void main(String[] args) {
         RequestConfig requestConfig = RequestConfig.custom().setCookieSpec(CookieSpecs.STANDARD_STRICT).build();
         CloseableHttpClient httpClient = HttpClients.custom().setDefaultRequestConfig(requestConfig).build();
-
+        
+        //test!!!
         HttpGet getHomePage = new HttpGet("http://www.zhihu.com/");
         try {
             //填充登陆请求中基本的参数
